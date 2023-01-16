@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>View Posts</title>
+</head>
+
+<body style="background-image: url('https://i0.wp.com/www.csscodelab.com/wp-content/uploads/2020/03/css-background-image-linear-gradient.png?fit=1048%2C670&ssl=1'); background-size: 100%;background-size: cover;">
+    <div>
+        <center>
+                <h1 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color: rgb(53, 31, 3); font-size: 50px;">All Posts</h1>
+                <table>
+                    {% for i in y %}
+                        <tr>
+                            <td style="border-style: solid; border-color: rgb(12, 6, 6);border-width: 2px;color:rgb(139, 52, 9);font-size: 25px;font-weight: 900;">Author Name</td>
+                            <td style="border-style: solid; border-color: rgb(12, 6, 6);border-width: 2px;color:rgb(0, 0, 0);font-size: 25px;font-family: cursive;width: 1000px;">{{i[0]}}</td>
+                        </tr>
+                        <tr>
+                            <td style="border-style: solid; border-color: rgb(12, 6, 6);border-width: 2px;color:rgb(139, 52, 9);font-size: 25px;font-weight: 900;">Title</td>
+                            <td style="border-style: solid; border-color: rgb(12, 6, 6);border-width: 2px;color:rgb(0, 0, 0);font-size: 25px;font-family: cursive;width: 1000px">{{i[1]}}</td>
+                        </tr>
+                        <tr>
+                            <td style="border-style: solid; border-color: rgb(12, 6, 6);border-width: 2px;color:rgb(139, 52, 9);font-size: 25px;vertical-align: top;font-weight: 900;">Blog</td>
+                            <td style="border-style: solid; border-color: rgb(12, 6, 6);border-width: 2px;color:rgb(0, 0, 0); height: 150px; vertical-align: top; width: 1000px;font-size: 25px;font-family: cursive;">{{i[2]}}</td>
+                        </tr>
+                        <tr>
+                            <td><br><br></td>
+                        </tr>
+                    {% endfor %}
+                </table>
+        </center>
+    </div>
+</body>
+
+</html>

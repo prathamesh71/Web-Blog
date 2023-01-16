@@ -1,0 +1,36 @@
+<html lang="en">
+
+<head>
+    <title>Add Blog</title>
+</head>
+
+<body
+    style="background-image: url('https://media.istockphoto.com/videos/colored-smoke-on-a-dark-background-blue-and-red-light-with-smoke-video-id1341408852?b=1&k=20&m=1341408852&s=640x640&h=C6ymXpr_Jn6-WqQmHHuS8z6TGBtkWDQ9x6tFs_hsBjs='); background-size: 100%;">
+    <div>
+        <h1
+            style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: rgba(50, 154, 147, 0.871); font-size: 80px;">
+            Add New Blog</h1>
+        <form action="/addblogpost" method="post">
+            <table>
+                <tr>
+                    <td style="color:rgb(0, 229, 255);font-size: 25px;">Author Name</td>
+                    <td><input style="width: 500px;background-color: rgb(7, 92, 148);height: 50px;font-size: 25px;" type="text" name="name" placeholder='Name'required></td>
+                </tr>
+                <tr>
+                    <td style="color:rgb(0, 229, 255);font-size: 25px;">Title</td>
+                    <td><input style="width: 500px;background-color: rgb(7, 92, 148);height: 50px;font-size: 25px;" type="text" name="title" placeholder='Title'required></td>
+                </tr>
+                <tr>
+                    <td style="vertical-align: top;color:rgb(0, 229, 255);font-size: 25px;">Blog</td>
+                <div>
+                    <td><textarea style="background-color: rgb(7, 92, 148);font-size: 25px;" name="blog" cols="80" rows="15" placeholder="Your Blog"></textarea></td>
+                </div>
+                </tr>
+            </table>
+            <button style="margin-left: 145px;cursor: pointer;padding: 10px; font-size: 15px; color:rgb(21, 38, 82); background-color: rgba(6, 228, 240, 0.812);" type="submit">Add Post</button>
+                <button style="cursor: pointer;padding: 10px;font-size: 15px; color:rgb(21, 38, 82); background-color: rgba(6, 228, 240, 0.812);" type="reset">Clear</button>
+        </form>
+    </div>
+</body>
+
+</html>
